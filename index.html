@@ -13,9 +13,11 @@
         vm = Vue.createApp({
             data() {
                 return {
-                    text: "Hola vue"
+                    text: "<h1>Hola vue</h1>"
                 };
-            }
+            },
+            template: '<div v-html="text"> </div>'
+            
 
         }).mount("#app");
         console.log(vm)
